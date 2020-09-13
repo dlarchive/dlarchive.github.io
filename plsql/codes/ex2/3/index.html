@@ -1,0 +1,41 @@
+
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="Styles/SyntaxHighlighter.css"></link>
+		<script language="javascript" src="Scripts/shCore.js"></script>
+		<script language="javascript" src="Scripts/shBrushSql.js"></script>
+		<script language="javascript" src="Scripts/shBrushXml.js"></script>
+	</head>
+	<body>
+		<textarea name="code" id="code" class="sql">DECLARE    
+    TYPE yearList IS VARRAY(6) OF INTEGER;     
+    dateList yearList;    
+    i NUMBER(2);    
+        
+BEGIN    
+    i := 1;    
+    dateList := yearList(1990, 2000, 1996, 1900, 2016, 1884);     
+        
+    LOOP    
+        
+        IF (((dateList(i) MOD 4 = 0) AND (dateList(i) MOD 100 != 0))  
+        OR (dateList(i) MOD 400 = 0)) THEN    
+           dbms_output.put_line(dateList(i) || ' is leap year');    
+        ELSE    
+           dbms_output.put_line(dateList(i) || ' is not leap year');    
+        END IF;    
+    
+        i := i+1;  
+        EXIT WHEN i > 6;    
+
+    END LOOP;
+        
+END;</textarea>
+			<script language="javascript">
+		<!--
+			dp.SyntaxHighlighter.HighlightAll('code', true,false);
+			document.body.removeChild(document.getElementById("code"));
+	  -->
+	</script>
+</body>
+</html>
