@@ -1,28 +1,16 @@
-
-<html>
-	<head>
-		<link type="text/css" rel="stylesheet" href="http://planetb.ca/projects/syntaxHighlighter/Styles/SyntaxHighlighter.css"></link>
-		<script language="javascript" src="http://planetb.ca/projects/syntaxHighlighter/Scripts/shCore.js"></script>
-		<script language="javascript" src="http://planetb.ca/projects/syntaxHighlighter/Scripts/shBrushSql.js"></script>
-		<script language="javascript" src="http://planetb.ca/projects/syntaxHighlighter/Scripts/shBrushXml.js"></script>
-	</head>
+<html><head>
+		<link type="text/css" rel="stylesheet" href="Styles/SyntaxHighlighter.css">
+		<script language="javascript" src="Scripts/shCore.js"></script>
+		<script language="javascript" src="Scripts/shBrushSql.js"></script>
+		<script language="javascript" src="Scripts/shBrushXml.js"></script>
+	<style type="text/css">.dp-sql .func { color: #ff1493; }.dp-sql .op { color: #808080; }</style></head>
 	<body>
-		<textarea name="code" id="code" class="sql">DECLARE  
-    v_number NUMBER;  
-    v_square NUMBER;  
-BEGIN
-    -- A prompt window will ask you to enter the number
-    -- In Oracle SQL Developer
-    v_number := &number_to_be_squared;
-    -- square the user input
-    v_square := v_number ** 2;  
-    dbms_output.put_line('The square of '|| v_number ||' is '|| v_square);   
-END;</textarea>
+		<div class="dp-highlighter"><div class="bar"></div><ol start="1" class="dp-sql"><li class="alt"><span><span class="keyword">DECLARE</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;v_number&nbsp;NUMBER;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;v_square&nbsp;NUMBER;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class=""><span><span class="keyword">BEGIN</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">--&nbsp;A&nbsp;prompt&nbsp;window&nbsp;will&nbsp;ask&nbsp;you&nbsp;to&nbsp;enter&nbsp;the&nbsp;number</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">--&nbsp;In&nbsp;Oracle&nbsp;SQL&nbsp;Developer</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;v_number&nbsp;:=&nbsp;&amp;number_to_be_squared;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">--&nbsp;square&nbsp;the&nbsp;user&nbsp;input</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;v_square&nbsp;:=&nbsp;v_number&nbsp;**&nbsp;2;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;dbms_output.put_line(<span class="string">'The&nbsp;square&nbsp;of&nbsp;'</span><span>||&nbsp;v_number&nbsp;||</span><span class="string">'&nbsp;is&nbsp;'</span><span>||&nbsp;v_square);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">END</span><span>;&nbsp;&nbsp;</span></span></li></ol></div>
 			<script language="javascript">
 		<!--
 			dp.SyntaxHighlighter.HighlightAll('code', true,false);
 			document.body.removeChild(document.getElementById("code"));
 	  -->
 	</script>
-</body>
-</html>
+
+</body></html>
