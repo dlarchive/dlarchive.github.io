@@ -1,10 +1,13 @@
+
 <html>
-<head>
-<title>Exercise 4 / Number 2 Code</title>
-</head>
-<body>
-<p>
-DECLARE  
+	<head>
+		<link type="text/css" rel="stylesheet" href="http://planetb.ca/projects/syntaxHighlighter/Styles/SyntaxHighlighter.css"></link>
+		<script language="javascript" src="http://planetb.ca/projects/syntaxHighlighter/Scripts/shCore.js"></script>
+		<script language="javascript" src="http://planetb.ca/projects/syntaxHighlighter/Scripts/shBrushSql.js"></script>
+		<script language="javascript" src="http://planetb.ca/projects/syntaxHighlighter/Scripts/shBrushXml.js"></script>
+	</head>
+	<body>
+		<textarea name="code" id="code" class="sql">DECLARE  
     v_number NUMBER;  
     v_square NUMBER;  
 BEGIN
@@ -14,7 +17,12 @@ BEGIN
     -- square the user input
     v_square := v_number ** 2;  
     dbms_output.put_line('The square of '|| v_number ||' is '|| v_square);   
-END;
-</p>
+END;</textarea>
+			<script language="javascript">
+		<!--
+			dp.SyntaxHighlighter.HighlightAll('code', true,false);
+			document.body.removeChild(document.getElementById("code"));
+	  -->
+	</script>
 </body>
 </html>
