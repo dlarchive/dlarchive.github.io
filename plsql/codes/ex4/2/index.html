@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Exercise 4 / Number 2 Code</title>
+</head>
+<body>
+<p>
+DECLARE  
+    v_number NUMBER;  
+    v_square NUMBER;  
+BEGIN
+    -- A prompt window will ask you to enter the number
+    -- In Oracle SQL Developer
+    v_number := &number_to_be_squared;
+    -- square the user input
+    v_square := v_number ** 2;  
+    dbms_output.put_line('The square of '|| v_number ||' is '|| v_square);   
+END;
+</p>
+</body>
+</html>
